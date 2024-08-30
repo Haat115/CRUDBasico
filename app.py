@@ -29,6 +29,14 @@ def index():
     produtos = Produto.query.all()
     return jsonify([produto.to_json() for produto in produtos])
 
+@app.route("/<id>", methods=['GET'])
+def get(id):
+    produto = Produto.query.filter(Produto.id==id).first()
+    if produto:
+        return jsonify(produto.to_json()), 200
+    else:
+        return jsonify({'message':'Não foi possivel encontrar o produto.'}), 404
+
 @app.route("/", methods=['POST'])
 def create():
     data = request.get_json()
@@ -65,6 +73,7 @@ def delete(id):
     if produto: 
         db.session.delete(produto)
         db.session.commit()
+        return jsonify({'message': 'Sucesso ao remover produto.'})
     else:
         return jsonify({'message':'Não foi possivel encontrar o produto.'}), 404
 

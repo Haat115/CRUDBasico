@@ -1,0 +1,79 @@
+/* styles.css */
+
+/* Geral */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Container do formulário */
+#cadastro {
+    padding: 20px;
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo do formulário */
+#cadastro-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Estilo dos campos de entrada */
+.cadastro-texto {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%;
+}
+
+/* Estilo do botão de submit */
+#salvar {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#salvar:hover {
+    background-color: #0056b3;
+}
+
+/* Container da tabela */
+#tabela {
+    padding: 20px;
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo da tabela */
+#tabela-produtos {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#tabela-produtos th, #tabela-produtos td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+#tabela-produtos th {
+    background-color: #f8f9fa;
+    font-weight: bold;
+}
+
+#tabela-produtos tr:hover {
+    background-color: #f1f1f1;
+}

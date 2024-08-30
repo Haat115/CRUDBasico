@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de Produtos</title>
+    <link rel="stylesheet" href="../static/styles.css">
+</head>
+<body>
+    <div id="cadastro">
+        <form id="cadastro-form">
+            <input type="text" class="cadastro-texto" placeholder="Código" id="codigo">
+            <input type="text" class="cadastro-texto" placeholder="Nome" id="nome">
+            <input type="text" class="cadastro-texto" placeholder="Descrição" id="descricao">
+            <input type="text" class="cadastro-texto" placeholder="Preço" id="preco">
+            <input type="submit" value="Salvar" id="salvar">
+        </form>
+    </div>
+    <div id="tabela">
+        <table id="tabela-produtos">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>CÓDIGO</th>
+                    <th>NOME</th>
+                    <th>PREÇO</th>
+                    <th>DESCRIÇÃO</th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>           
+        </table>
+    </div>
+</body>
+<footer>
+    <script src="../static/index.js"></script>  
+    <div id="id-produto"></div>
+</footer>
+</html>
